@@ -1,0 +1,13 @@
+<html>
+<head>
+  <script> 
+  function Btntest(event)     { 
+    var Num = event.button;     if (Num==2)       { 
+      alert("已按下鼠标右键！")       } 
+     else if(Num==0)       { 
+      alert("已按下鼠标左键！")       } 
+     else if(Num==1)       { 
+      alert("已按下鼠标中键！");       }    else       { 
+      alert("已按下" + Num+ "号键，属于其他功能键。");       }     }  </script> </head> 
+<body onmousedown="Btntest(event)"> 
+<p>在网页任意位置点击鼠标的按键，页面会弹出提示框窗口，显示您按下的鼠标按键是左键、中键还是右键，或者是其他鼠标功能键。</p>  </body> </html>
